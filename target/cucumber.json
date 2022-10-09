@@ -1,0 +1,244 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-09T06:52:23.915Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1389363200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Adding two numbers",
+        "description": "",
+        "id": "calculation;adding-two-numbers",
+        "after": [
+          {
+            "result": {
+              "duration": 71050400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1982700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I opened the Calculator",
+            "match": {
+              "location": "stepdefinitions.CalculatorStepDef.i_opened_the_Calculator()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4000800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I add below numbers",
+            "match": {
+              "location": "stepdefinitions.CalculatorStepDef.i_add_below_numbers(java.util.List\u003cjava.lang.Integer\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "3"
+                ]
+              },
+              {
+                "cells": [
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "2"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2996600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "sum should be 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 14
+                }
+              ],
+              "location": "stepdefinitions.CalculatorStepDef.sum_should_be(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Calculation",
+    "description": "",
+    "id": "calculation",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Calculator.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1171567600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepdefinitions.LoginStepDef.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4884165100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on the Login link",
+            "match": {
+              "location": "stepdefinitions.LoginStepDef.i_click_on_the_Login_link()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-09T06:52:25.446Z",
+        "before": [
+          {
+            "result": {
+              "duration": 656212700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "This scenario is to login",
+        "description": "",
+        "id": "login-feature-scenario;this-scenario-is-to-login",
+        "after": [
+          {
+            "result": {
+              "duration": 100929500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 169029500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I enter the username as \"abc@xyz.com\" and password as \"Test@1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abc@xyz.com\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"Test@1234\"",
+                  "offset": 54
+                }
+              ],
+              "location": "stepdefinitions.LoginStepDef.i_enter_the_username_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 393926100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click on the Login button",
+            "match": {
+              "location": "stepdefinitions.LoginStepDef.i_click_on_the_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 741752500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I should get the error message \"The email or password you have entered is invalid.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The email or password you have entered is invalid.\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.LoginStepDef.i_should_get_the_error_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature Scenario",
+    "description": "",
+    "id": "login-feature-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login.feature",
+    "tags": []
+  }
+]
